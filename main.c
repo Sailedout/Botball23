@@ -9,12 +9,13 @@ int main()
                      
     enable_servos();  // starts the servos
     
-    set_servo_position(1,1900);// opens arm
+    set_servo_position(1,900);// opens claw
     
     create_drive_direct(400,400);
     msleep(3000);
         
-    set_servo_position(1,900);// closes arm
+    set_servo_position(1,1900);// closes claw
+    msleep(1000);
        
     
  
